@@ -6,6 +6,7 @@ import {Loading} from './src/components/Loading'
 
 import {Home} from './src/pages/Home'
 import {SignIn} from './src/pages/SignIn'
+import {Register} from './src/pages/Register'
 
 export default function App() {
 
@@ -17,7 +18,7 @@ export default function App() {
       barStyle='light-content'
       backgroundColor='transparent'
       translucent/>
-      { fontsLoaded ? <Home /> :  <Loading /> }
+      { fontsLoaded ? <Register /> :  <Loading /> }
     </NativeBaseProvider>
   );
 }
