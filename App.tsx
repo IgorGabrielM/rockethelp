@@ -1,8 +1,11 @@
 import { NativeBaseProvider,StatusBar } from 'native-base';
 import { THEME } from './src/styles/theme'
-import {SignIn} from './src/pages/SignIn'
 import { useFonts, Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/roboto'
+
 import {Loading} from './src/components/Loading'
+
+import {Home} from './src/pages/Home'
+import {SignIn} from './src/pages/SignIn'
 
 export default function App() {
 
@@ -14,7 +17,7 @@ export default function App() {
       barStyle='light-content'
       backgroundColor='transparent'
       translucent/>
-      { fontsLoaded ? <SignIn /> :  <Loading /> }
+      { fontsLoaded ? <Home /> :  <Loading /> }
     </NativeBaseProvider>
   );
 }
