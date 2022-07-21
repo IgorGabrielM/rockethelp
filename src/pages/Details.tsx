@@ -83,6 +83,7 @@ export function Details(){
                 </Text>
             </HStack>
             <ScrollView mx={5} showsVerticalScrollIndicator={false}>
+                
                 <CardDetails
                   title="Equipamento"
                   description={`Patrimônio ${order.patrimony}`}
