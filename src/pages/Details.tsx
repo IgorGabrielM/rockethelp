@@ -111,7 +111,7 @@ export function Details(){
                 </CardDetails>
             </ScrollView>
             {
-                !order.closed && <Button title="Encerrar solicitação" m={5} />
+                order.status === 'open' && <Button title="Encerrar solicitação" m={5} />
             }
         </VStack>
     )
